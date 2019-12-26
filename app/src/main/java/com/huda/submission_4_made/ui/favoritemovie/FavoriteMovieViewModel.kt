@@ -3,11 +3,15 @@ package com.huda.submission_4_made.ui.favoritemovie
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.huda.submission_4_made.entity.DataFilm
 
 class FavoriteMovieViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+    private val listDataFilm = MutableLiveData<List<DataFilm>>()
+    fun setFilm(movieList: List<DataFilm>) {
+        this.listDataFilm.postValue(movieList)
     }
-    val text: LiveData<String> = _text
+    fun getFilm(): LiveData<List<DataFilm>> {
+        return listDataFilm
+    }
 }

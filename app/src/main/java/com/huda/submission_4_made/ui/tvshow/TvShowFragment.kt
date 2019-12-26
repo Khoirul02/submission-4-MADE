@@ -11,7 +11,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.huda.submission_4_made.R
 import com.huda.submission_4_made.adapter.ListTvShowAdapter
-import com.huda.submission_4_made.model.RootData
 import kotlinx.android.synthetic.main.tv_show_fragment.*
 
 class TvShowFragment : Fragment() {
@@ -48,13 +47,6 @@ class TvShowFragment : Fragment() {
             if (filmItems != null) {
                 adapter.setData(filmItems)
                 showLoading(false)
-            }
-        })
-        adapter.setOnItemClickCallback(object : ListTvShowAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: RootData) {
-//                val intent = Intent(activity, DetailTvShowActivity::class.java)
-//                intent.putExtra(DetailTvShowActivity.EXTRA_FILM, data)
-//                startActivity(intent)
             }
         })
     }

@@ -9,8 +9,8 @@ data class RootData(
     var photo: String? = "",
     var description: String? = "",
     var date: String? = "",
-    var rate : Double = 0.1
-): Parcelable {
+    var rate: Double = 0.1
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString(),

@@ -18,7 +18,7 @@ class TvShowViewModel : ViewModel() {
 
     val listDataFilm = MutableLiveData<ArrayList<RootData>>()
 
-    internal fun setFilm(language : String) {
+    internal fun setFilm(language: String) {
         val client = AsyncHttpClient()
         val listItems = ArrayList<RootData>()
         val url =
@@ -41,6 +41,7 @@ class TvShowViewModel : ViewModel() {
                         filmItems.description = film.getString("overview")
                         filmItems.photo = film.getString("poster_path")
                         filmItems.rate = film.getDouble("vote_average")
+                        filmItems.date = film.getString("first_air_date")
                         listItems.add(filmItems)
                     }
                     listDataFilm.postValue(listItems)

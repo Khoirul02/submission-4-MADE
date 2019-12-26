@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Submission_4_MADE</string>
+    <string name="title_movie">Film</string>
+    <string name="title_favorite_movie">Film Favorit</string>
+    <string name="title_tv_show">Acara Tv</string>
+    <string name="title_favorite_tv_show">Acara Tv Favorit</string>
+    <string name="content_tab_movies">Ini Film</string>
+    <string name="content_favorite_tab_movies">Ini Film Favorit</string>
+    <string name="content_tab_tv_show">Ini Tv Show</string>
+    <string name="content_favorite_tab_tv_show">Ini Acara Tv Favorit</string>
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="movies_name">Nama Film</string>
+    <string name="description">Deskripsi</string>
+    <string name="text_rate">Nilai :</string>
+    <string name="nilai_rate">Nilai</string>
+    <string name="language_string">id-ID</string>
+    <string name="movies_date">Waktu</string>
+    <string name="title_rate">7.8</string>
+</resources>
