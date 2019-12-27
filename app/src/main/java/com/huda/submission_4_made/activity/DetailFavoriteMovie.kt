@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
 import com.bumptech.glide.Glide
@@ -51,7 +52,8 @@ class DetailFavoriteMovie : AppCompatActivity() {
         }
         override fun onPostExecute(bool: Boolean?) {
             if (bool!!) {
-                val intent = Intent(context, FavoriteMovieFragment::class.java)
+                Toast.makeText(context, "Delete for Favorite", Toast.LENGTH_LONG).show()
+                val intent = Intent(context, MainActivity::class.java)
                 startActivity(context,intent, Bundle())
             }
         }

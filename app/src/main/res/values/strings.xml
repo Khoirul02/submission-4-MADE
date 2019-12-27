@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Submission_4_MADE</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_movie">Movies</string>
     <string name="title_favorite_movie">Favorite Movies</string>
     <string name="title_tv_show">Tv Show</string>
@@ -20,4 +17,5 @@
     <string name="language_string">en-EN</string>
     <string name="movies_date">Date</string>
     <string name="title_rate">7.8</string>
+    <string name="empety">Favorite is still empty</string>
 </resources>

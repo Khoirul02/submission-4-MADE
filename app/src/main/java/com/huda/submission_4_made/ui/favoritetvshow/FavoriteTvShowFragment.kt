@@ -50,8 +50,9 @@ class FavoriteTvShowFragment : Fragment() {
                 adapter.setData(tvShowList)
                 showLoading(false)
             } else{
+                val empety = resources.getString(R.string.empety)
                 adapter.listTvShow = ArrayList()
-                showSnackbarMessage("Tidak ada data saat ini")
+                showSnackbarMessage(empety)
                 showLoading(false)
             }
         })

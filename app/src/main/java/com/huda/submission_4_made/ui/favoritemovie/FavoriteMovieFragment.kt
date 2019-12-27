@@ -51,8 +51,9 @@ class FavoriteMovieFragment : Fragment() {
                 adapter.setData(movieList)
                 showLoading(false)
             } else{
+                val empety = resources.getString(R.string.empety)
                 adapter.listMovie = ArrayList()
-                showSnackbarMessage("Tidak ada data saat ini")
+                showSnackbarMessage(empety)
                 showLoading(false)
             }
         })

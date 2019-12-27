@@ -18,4 +18,5 @@
     <string name="language_string">id-ID</string>
     <string name="movies_date">Waktu</string>
     <string name="title_rate">7.8</string>
+    <string name="empety">Data Favorit Masih Kosong</string>
 </resources>

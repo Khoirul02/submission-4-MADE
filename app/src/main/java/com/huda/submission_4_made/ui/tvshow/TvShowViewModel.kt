@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.huda.submission_4_made.BuildConfig
 import com.huda.submission_4_made.model.RootData
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
@@ -12,9 +13,7 @@ import org.json.JSONObject
 
 class TvShowViewModel : ViewModel() {
 
-    companion object {
-        private const val API_KEY = "8152b136a5dad36d2ca7844f884577ba"
-    }
+    private val API_KEY = BuildConfig.API_KEY
 
     val listDataFilm = MutableLiveData<ArrayList<RootData>>()
 
